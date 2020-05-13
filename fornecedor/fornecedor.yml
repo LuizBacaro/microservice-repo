@@ -1,10 +1,11 @@
 spring:
   application:
-    name: 'itau'
-  datasource:
-    password: postgres
-    username: postgres
-    url: jdbc:mysql://postgresql:5432/itau
+    name: fornecedor
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://172.17.0.2:3306/fornecedordb
+    username: root
+    password: root 
